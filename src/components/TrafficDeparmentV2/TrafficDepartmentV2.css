@@ -1,0 +1,621 @@
+.traffic_department_v2_container{
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+
+.div_title_traffic{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(241 245 249); */
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(241 245 249); */
+    margin: 10px 10px;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.title_traffic{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #032054;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.div_searchaddtraffic{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.div_search_car_number{
+    height: 40px;
+    width: 248px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    border: 1.5px solid var(--Black-85, #D9D9D9);
+    background: var(--Black-100, #FFF);
+}
+
+.div_search_car_number i{
+    width: 14px;
+    height: 14px;
+    margin-left: 16px;
+    margin-right: 4px;
+}
+
+.div_search_car_number input{
+    width: 200px;
+    /* color: var(--Black-60, #999); */
+    color: black;
+    font-family: var(--font-galano);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn_addtrafficdetails{
+    display: flex;
+    height: 40px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-left: 40px;
+    background-color: #032054;
+    color: var(--Black-100, #FFF);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: green; */
+}
+
+.div_table_car_details{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+.car_number_cards{
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out, border 0.2s ease;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.car_number_cards:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.car_number_title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_car_number{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #032054;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal_addtraffic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(3, 32, 84, 0.82);;
+}
+  
+.modal_content_addtraffic {
+    background-color: #fefefe;
+    height: 522px;
+    width: 1151px;
+    border-radius: 19px;
+}
+
+.modal_upper_buttons_addtraffic{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+
+.modal_img_upper_govteltraffic{
+    height: 85px;
+    width: 85px;
+    margin-top: 15px;
+    margin-left: 55px;
+}
+
+.modal_close_traffic{
+    width: 28px;
+    height: 28px;
+    margin-top: 27.41px;
+    margin-right: 33.41px;
+}
+
+.span_close_traffic{
+    width: 100%;
+    height: 100%;
+    font-size: 27px;
+    color: #032054;
+    cursor: pointer;
+}
+
+.span_close_traffic:hover{
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.modal_title_addtraffic{
+    height: 27px;
+    width: 100%;
+}
+
+.modal_title_text_addtraffic{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #032054;
+    margin-left: 54px;
+}
+
+.div_addtraffic_modal_fr01{
+    margin-top: 20px;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.div_addtraffic_fr01_inner01{
+    height: 100%;
+    width: 301px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 54px;
+    margin-right: 30px;
+}
+
+.addtraffic_span_fr01_inner01{
+    color: #032054;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input_container{
+    position: relative;
+    display: inline-block;
+}
+
+.addtraffic_input_fr01_inner01{
+    width: 301px;
+    height: 50px;
+    margin-top: 8px;
+    border: 1px solid #032054;
+    border-radius: 6px;
+    opacity: 0.5;
+    padding-left: 12px;
+    background: url('../../images/calender.png') no-repeat;
+    background-position: right 10px center;
+    background-size: 20px 20px;
+    padding-right: 40px; /* Make space for the calendar icon */
+}
+
+.addtraffic_input_fr01_inner01:hover{
+    border: 1px solid #032054;
+    opacity: 1;
+}
+
+.addtraffic_input_fr01_inner01::placeholder{
+    text-align: left;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    color: #DCDCDC;
+    
+}
+
+.img_calender{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.div_fr01_inner02{
+    height: 100%;
+    width: 301px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.span_fr01_inner02{
+    color: #032054;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input_fr01_inner02{
+    width: 301px;
+    height: 50px;
+    margin-top: 8px;
+    border: 1px solid #032054;
+    border-radius: 6px;
+    opacity: 0.5;
+    padding-left: 12px;
+}
+
+.input_fr01_inner02:hover{
+    border: 1px solid #032054;
+    opacity: 1;
+}
+
+.input_fr01_inner02::placeholder{
+    text-align: left;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    color: #DCDCDC;
+    
+}
+
+.div_fr01_inner03{
+    height: 100%;
+    width: 301px;
+    display: flex;
+    flex-direction: column;
+}
+
+.span_fr01_inner03{
+    color: #032054;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input_fr01_inner03{
+    width: 301px;
+    height: 50px;
+    margin-top: 8px;
+    border: 1px solid #032054;
+    border-radius: 6px;
+    opacity: 0.5;
+    padding-left: 12px;
+}
+
+.input_fr01_inner03:hover{
+    border: 1px solid #032054;
+    opacity: 1;
+}
+
+.input_fr01_inner03::placeholder{
+    text-align: left;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    color: #DCDCDC; 
+}
+
+.div_addtraffic_modal_fr02{
+    margin-top: 20px;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.div_addtraffic_fr02_inner01{
+    height: 100%;
+    width: 301px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 54px;
+    margin-right: 30px;
+}
+
+.addtraffic_input_container_fr02_01 {
+    position: relative;
+    display: inline-block;
+}
+  
+.addtraffic_span_fr02_inner01 {
+    color: #032054;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.addtraffic_input_fr02_inner01 {
+    width: 301px;
+    height: 50px;
+    margin-top: 8px;
+    border: 1px solid #032054;
+    border-radius: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    color: white;
+}
+  
+.addtraffic_input_fr02_inner01:hover {
+    border: 1px solid #032054;
+    opacity: 1;
+}
+  
+.addtraffic_input_fr02_inner01::file-selector-button {
+    height: 50px;
+    width: 107px;
+    background: #929292 0% 0% no-repeat padding-box;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    cursor: pointer;
+    font: normal normal normal 16px/19px 'Roboto', sans-serif;
+    opacity: 1;
+}
+  
+/* .addtraffic_input_fr02_inner01::file-selector-button:hover {
+    background-color: #45a049;
+} */
+
+.addtraffic_input_fr02_inner01::placeholder {
+    text-align: left;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    color: #DCDCDC;
+}
+  
+
+.div_addtraffic_fr02_inner02 {
+    height: 100%;
+    width: 301px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.addtraffic_input_container_fr02_02 {
+    position: relative;
+    display: inline-block;
+}
+  
+.addtraffic_span_fr02_inner02 {
+    color: #032054;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.addtraffic_input_fr02_inner02 {
+    width: 301px;
+    height: 50px;
+    margin-top: 8px;
+    border: 1px solid #032054;
+    border-radius: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    color: white;
+}
+  
+.addtraffic_input_fr02_inner02:hover {
+    border: 1px solid #032054;
+    opacity: 1;
+}
+  
+.addtraffic_input_fr02_inner02::file-selector-button {
+    height: 50px;
+    width: 107px;
+    background: #929292 0% 0% no-repeat padding-box;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    cursor: pointer;
+    font: normal normal normal 16px/19px 'Roboto', sans-serif;
+    opacity: 1;
+}
+
+.addtraffic_input_fr02_inner02::placeholder {
+    text-align: left;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    color: #DCDCDC;
+}
+
+.div_addtraffic_fr02_inner03 {
+    height: 100%;
+    width: 301px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addtraffic_span_fr02_inner03 {
+    color: #032054;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.addtraffic_input_container_fr02_02{
+    position: relative;
+    display: inline-block;
+}
+
+.addtraffic_input_fr02_inner03 {
+    width: 301px;
+    height: 50px;
+    margin-top: 8px;
+    border: 1px solid #032054;
+    border-radius: 6px;
+    opacity: 0.5;
+    padding-left: 12px;
+    background: url('../../images/select_down.png') no-repeat;
+    background-position: right 10px center;
+    background-size: 26px 26px;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.addtraffic_input_fr02_inner03:hover {
+    border: 1px solid #032054;
+    opacity: 1;
+}
+
+.addtraffic_input_fr02_inner03::placeholder {
+    text-align: left;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    color: #DCDCDC;
+}
+
+.dropdown_menu {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 5px;
+}
+
+.dropdown_option {
+    padding: 10px;
+    cursor: pointer;
+    color: #032054;
+}
+
+.dropdown_option:hover {
+    background-color: #f1f1f1;
+}
+
+.addtraffic_div_modal_fr04{
+    margin-top: 20px;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+}
+
+.addtraffic_div_fr04_inner01{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 54px;
+    justify-content: center;
+}
+
+.addtraffic_btn_fr04_inner01{
+    width: 126px;
+    height: 50px;
+    background: #032054 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}

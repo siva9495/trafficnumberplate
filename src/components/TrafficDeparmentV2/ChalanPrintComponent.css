@@ -1,0 +1,25 @@
+.print-container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .table-chalan {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  
+  .table-chalan th, .table-chalan td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .table-chalan th {
+    background-color: #f2f2f2;
+  }
+  
+  .image {
+    display: block;
+    margin: 10px 0;
+  }
+  

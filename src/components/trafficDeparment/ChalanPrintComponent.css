@@ -1,0 +1,32 @@
+.print-container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .table-chalan {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    page-break-inside: avoid;
+  }
+  
+  .table-chalan th, .table-chalan td {
+    border: 1px solid #dcd7d7;
+    padding: 8px;
+  }
+  
+  .table-chalan th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .table-chalan img {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    width: 50%; /* Make the image responsive */
+    max-width: 650px; /* Adjust this to increase/decrease the image size */
+    height: 200px; /* Maintain aspect ratio */
+    margin: 10px 0; /* Add some margin for better spacing */
+  }
+  

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Galano;
+    src: url(../src/Fonts/GalanoGrotesqueAltRegular.otf) format('opentype');;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --white-txt-color: #FFFFFFCC;
+    --white-bg10-color: #FFFFFF1A;
+    --black-color: #1A181E;
+    --light-black: #4D4D4D;
+    --navbar-backgroud-color: #353C53;
+    --blue-color: #146EB4;
+    --darkblue-color: #0E4F82;
+    --lightgray-color: #F2F2F2;
+    --dark-gary: #808080;
+    --green-color: #17B31B;
+    --font-inter: 'Inter', sans-serif;
+    --font-galano: 'Galano'
+
+}
